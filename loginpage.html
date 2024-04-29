@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>loogin</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                user-select: none;
+            }
+            body{
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-image: url("nick.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            position: relative;
+            height: 70px;
+            top: 100px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .link{
+            display: flex;
+            width: 800px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.204);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.313);
+            font-family: "Londrina Solid", sans-serif;
+            transition: .2s linear;
+        }
+        a:hover{
+            scale: 1.1;
+            box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.313);
+        }
+        .input{
+            height: 600px;
+            width: 450px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(5px);
+            position: relative;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.142);
+            box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.13);
+        }
+        form{
+            height:50%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        input{
+            width: 170%;
+            padding: 15px 20px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.164);
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.195);
+        }
+        .input input:nth-child(3){
+            background-color: rgb(83, 83, 181);
+            color: white;
+            margin: 80px 0px 0px 0px;
+            cursor: pointer;
+        }
+        
+         h1{
+            margin: -100px 0px 30px;
+            color: white;
+         }
+        .input input:hover {
+            background-color: rgb(0, 255, 128)
+            
+        }       
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="link">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Our Shope</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="sign.html">Sign In</a>
+                </div>
+            </nav>
+            <div class="input">
+                <h1>LOGIN</h1>
+                <form action="nick.html">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="submit" value="LOG IN">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

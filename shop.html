@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+            .container{
+            height: 150vh;
+            width: 100%;
+            background-image: url("soul.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav{
+            position: relative;
+            height: 70px;
+            top: 100px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .link{
+            display: flex;
+            width: 800px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.204);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.313);
+            font-family: "Londrina Solid", sans-serif;
+            transition: .2s linear;
+        }
+        a:hover{
+            scale: 1.1;
+            box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.313);
+        }
+        .input{
+            height: 600px;
+            width: 450px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(5px);
+            position: relative;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.142);
+            box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.13);
+        }
+        form{
+            height:50%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        input{
+            width: 170%;
+            padding: 15px 20px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.164);
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.195);
+        }
+        .logo {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 200px;
+        }
+
+        .game-item {
+            background-color: white;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            height: 300px;
+            width: calc(33.333% - 10px);
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 20px 0px black;
+        }
+
+        .game-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .game-price {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .buy-button {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        .buy-button:hover {
+            background-color: rgb(43, 255, 0)
+            
+        }
+        .cod{
+            background-image: url("call-of-duty-modern-warfare-4-wallpaper-preview.jpg");
+            background-size: cover;
+        }
+        .fh5{
+            background-image: url("Forza Horizon 5.jpg");
+            background-size: cover;
+        }
+        .mc{
+            background-image: url("minecraft-hd-pictures-f0k9haimutvt21n8.jpg");
+            background-size: cover;
+        }
+        .gtav{
+            background-image: url("gta-5-qpjtjdxwbwrk4gyj.jpg");
+            background-size: cover;
+        }
+        .cp2077{
+            background-image: url("2018-Gamescom-Awards-08-Cyberpunk-2077-01-740x416.jpg");
+            background-size: cover;
+        }
+        .csgo{
+            background-image: url("b4.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="link">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="sign.html">Sign In</a>
+                <a href="loginpage.html">login</a>
+            </div>
+        </nav>
+        
+        <div class="game-list">
+            <div class="cod game-item">
+                <div class="game-title">CALL OF DUTY BLACK OPS</div>
+                <div class="game-price">COST = 30 $</div>
+                <button class="buy-button">BUY NOW</button>
+            </div>
+            <div class="fh5 game-item">
+                <div class="game-title">FORZA HORIZON 5</div>
+                <div class="game-price">COST = 30 $</div>
+                <button class="buy-button">BUY</button>
+            </div>
+            <div class="mc game-item">
+                <div class="game-title">MINECRACFT</div>
+                <div class="game-price">COST = 56 $</div>
+                <button class="buy-button">BUY</button>
+            </div>
+            <div class="gtav game-item">
+                <div class="game-title">GTA 5</div>
+                <div class="game-price">COST = 67$</div>
+                <button class="buy-button">BUY</button>
+            </div>
+            <div class="cp2077 game-item">
+                <div class="game-title">CYBERPULK 2077</div>
+                <div class="game-price">COST = 45 $</div>
+                <button class="buy-button">BUY</button>
+            </div>
+            <div class="csgo game-item">
+                <div class="game-title">COUNTER STRIKE GO</div>
+                <div class="game-price">COST = FREE</div>
+                <button class="buy-button">BUY</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
